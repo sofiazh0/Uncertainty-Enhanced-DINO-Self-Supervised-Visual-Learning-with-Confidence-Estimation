@@ -1,4 +1,4 @@
-# Uncertainty-Aware DINO (UA-DINO)
+# Uncertainty-Enhanced DINO: Self-Supervised Visual Learning with Confidence Estimation
 
 A PyTorch implementation of an Uncertainty-Aware extension to the DINO (Self-Distillation with No Labels) self-supervised learning framework for Vision Transformers.
 
