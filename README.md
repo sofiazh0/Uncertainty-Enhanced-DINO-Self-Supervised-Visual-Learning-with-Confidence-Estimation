@@ -28,7 +28,7 @@ This project extends the original [DINO framework](https://github.com/facebookre
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/Uncertainty-Enhanced-DINO-Self-Supervised-Visual-Learning-with-Confidence-Estimation.git
+git clone https://github.com/sofiazh0/Uncertainty-Enhanced-DINO-Self-Supervised-Visual-Learning-with-Confidence-Estimation.git
 cd Uncertainty-Enhanced-DINO-Self-Supervised-Visual-Learning-with-Confidence-Estimation
 ```
 
@@ -40,7 +40,7 @@ pip install matplotlib numpy scikit-learn
 
 3. The CIFAR-10 dataset will be automatically downloaded on first run.
 
-## 🎯 Training
+## Training
 
 ### Basic Training
 
@@ -138,7 +138,7 @@ DL Project/
     └── log.txt
 ```
 
-## 🔍 Model Components
+## Model Components
 
 ### Core Files
 
@@ -164,7 +164,7 @@ DL Project/
 - **`eval_image_retrieval.py`**: Image retrieval benchmarks
 - **`eval_copy_detection.py`**: Copy detection evaluation
 
-## 🎨 Visualization
+## Visualization
 
 ### Attention Maps
 
@@ -184,7 +184,7 @@ The training script automatically generates PCA visualizations of the learned fe
 
 Loss curves are automatically plotted and saved to `plots/training_loss.png` after training.
 
-## 📝 Example Usage
+## Example Usage
 
 ### Load Pretrained Model
 
@@ -221,7 +221,7 @@ dataset = setup_dataset(args)
 student, stats = train_dino(args, dataset)
 ```
 
-## 📊 Uncertainty Metrics
+## Uncertainty Metrics
 
 The model tracks three types of uncertainty:
 
@@ -238,7 +238,7 @@ print(f"Epistemic Uncertainty: {metrics['epistemic_uncertainty']:.4f}")
 print(f"Aleatoric Uncertainty: {metrics['aleatoric_uncertainty']:.4f}")
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Key Hyperparameters
 
@@ -263,7 +263,7 @@ print(f"Aleatoric Uncertainty: {metrics['aleatoric_uncertainty']:.4f}")
 - Global crop scale: (0.4, 1.0)
 - Local crop scale: (0.05, 0.4)
 
-## 📚 References
+## References
 
 This project is based on the original DINO paper:
 
@@ -276,31 +276,7 @@ This project is based on the original DINO paper:
 }
 ```
 
-## 📁 Project Structure
-
-```
-DL Project/
-├── dino-main/                  # Main implementation directory
-│   ├── main_dino.py           # UA-DINO training loop
-│   ├── vision_transformer.py   # ViT with uncertainty
-│   ├── uncertainty_head.py     # Dual prediction head
-│   ├── uncertainty_loss.py     # Custom loss function
-│   ├── uncertainty_metrics.py  # Uncertainty tracking
-│   ├── test_ua_dino.py        # Standalone test script
-│   ├── utils.py               # Utility functions
-│   ├── visualize_attention.py # Attention visualization
-│   └── eval_*.py              # Various evaluation scripts
-├── data/                      # Dataset directory
-│   └── cifar-10-batches-py/  # CIFAR-10 data
-├── models/                    # Saved model checkpoints
-├── plots/                     # Training visualizations
-├── output/                    # Training logs
-├── test_images/              # Sample test images
-├── notebook.ipynb            # Jupyter notebook experiments
-└── README.md                 # This file
-```
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -320,7 +296,7 @@ DL Project/
 - Increase warmup epochs
 - Adjust temperature parameters
 
-## 💡 Tips
+## Tips
 
 1. **Start Small**: Begin with 500-1000 samples to verify everything works
 2. **Monitor Losses**: Watch both main loss and uncertainty loss components
@@ -328,7 +304,7 @@ DL Project/
 4. **Visualize**: Check attention maps to verify model is learning
 5. **Tune Temperatures**: Lower temperatures = sharper predictions
 
-## 🤝 Contributing
+## Contributing
 
 This is a research project. Feel free to:
 - Report bugs or issues
@@ -336,18 +312,18 @@ This is a research project. Feel free to:
 - Extend the framework
 - Share your results
 
-## 📄 License
+## License
 
 This project extends the original DINO implementation which is released under the Apache 2.0 license. See the [LICENSE](dino-main/LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Original DINO implementation by Facebook AI Research
 - Vision Transformer architecture from "An Image is Worth 16x16 Words"
 - CIFAR-10 dataset by Alex Krizhevsky
 - PyTorch and torchvision teams
 
-## 📧 Contact
+## Contact
 
 For questions or discussions about this project, please open an issue in the repository.
 
