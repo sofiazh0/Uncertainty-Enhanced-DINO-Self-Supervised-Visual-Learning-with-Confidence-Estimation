@@ -86,7 +86,7 @@ For standard DINO training on ImageNet:
 python main_dino.py --arch vit_small --data_path /path/to/imagenet/train --output_dir /path/to/output
 ```
 
-## 📊 Architecture
+## Architecture
 
 ### Uncertainty Head
 
@@ -111,7 +111,7 @@ The `UncertaintyAwareDINOLoss` combines:
 3. **Temperature Scheduling**: Adaptive temperature scaling during training
 4. **Center Update**: Momentum-based centering for stability
 
-## 📈 Results
+## Results
 
 ### Training Performance
 
